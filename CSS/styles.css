@@ -16,6 +16,8 @@
     --white: #fff;
 
     --mainFont: 'JetBrains Mono', monospace;
+
+    --smSize: 760px;
 }
 
 body {
@@ -49,7 +51,7 @@ p, h1, h2, h3 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
@@ -57,4 +59,58 @@ p, h1, h2, h3 {
 
 .slogan__content--title {
     text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 0 var(--bgColor), -2px 0 var(--bgColor), 0 2px var(--bgColor), 0 -2px var(--bgColor),
+               1px 1px var(--bgColor), -1px -1px var(--bgColor), 1px -1px var(--bgColor), -1px 1px var(--bgColor);
+    
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.slogan__content--title h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.slogan__content--title h3 {
+    font-size: 25px;
+    color: var(--rosadoJP-acento);
+    font-weight: 800;
+}
+
+@media (min-width: 760px) {
+    .slogan__content--title h1 {
+        font-size: 60px;
+    }
+    
+    .slogan__content--title h3 {
+        font-size: 45px;
+    }
+}
+
+.slogan__content--text {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 20px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.slogan__content--text span {
+    color: var(--verdeJP-100);
+}
+
+@media (min-width: 600px) {
+    .slogan__content--text {
+        font-size: 25px;
+        padding: 0 80px;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .slogan__content--text {
+        font-size: 30px;
+        padding: 0 100px;
+    }
 }
