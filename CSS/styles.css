@@ -4,9 +4,9 @@
 	--verdeJP-s30: #6F9E97;
 	--verdeJP-S60: #3F9E90;
 	--verdeJP-s15b95: #CEF2EC;
-	
+
 	--rosadoJP-acento: #EDB2BA;
-	
+
 	--azulJP-sem: #46A7EF;
 	--naranjaJP-sem: #DA9344;
 	--rojoJP-sem: #BC3345;
@@ -14,15 +14,18 @@
     --bgColor: #1E1E1E;
     --black: #000;
     --white: #fff;
+
+    --mainFont: 'JetBrains Mono', monospace;
 }
 
 body {
 	background-color: var(--bgColor);
-    
+
 }
 
 p, h1, h2, h3 {
     color: var(--white);
+    font-family: var(--mainFont);
 }
 
 .slogan {
@@ -40,6 +43,18 @@ p, h1, h2, h3 {
     z-index: -1;
 }
 
+/** Slogan **/
+
 .slogan__content {
-    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.slogan__content--title {
+    text-align: center;
 }
