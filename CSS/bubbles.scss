@@ -21,7 +21,7 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
 .bubble {
   position: absolute;
   left: var(--bubble-left-offset);
-  bottom: -75%;
+  bottom: -65%;
   display: block;
   width: var(--bubble-radius);
   height: var(--bubble-radius);
@@ -43,11 +43,11 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
   @for $i from 0 through $bubble-count {
     &:nth-child(#{$i}) {
       --bubble-left-offset: #{random_range(0vw, 100vw)};
-      --bubble-radius: #{random_range(1vw, 10vw)};
+      --bubble-radius: #{random_range(1vw, 12vw)};
       --bubble-float-duration: #{random_range(6s, 12s)};
       --bubble-sway-duration: #{random_range(4s, 6s)};
-      --bubble-float-delay: #{random_range(0s, 4s)};
-      --bubble-sway-delay: #{random_range(0s, 4s)};
+      --bubble-float-delay: #{random_range(0s, 3s)};
+      --bubble-sway-delay: #{random_range(0s, 3s)};
       --bubble-sway-type: #{sample($sway-type)};
     }
   }

@@ -40,16 +40,30 @@ p, h1, h2, h3 {
 }
 
 .nav-item {
-    color: var(--verdeJP-b30) !important;
-    background-color: var(--verdeJP-s15b95);
+    color: var(--white) !important;
     margin-right: 20px;
-    /* padding: 0 10px; */
+    border-radius: 10px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
 }
 
 .navbar-nav .nav-link {
     padding-left: 20px;
 }
 
+.nav-item:hover {
+    background-color: var(--verdeJP-s15b95);
+    color: var(--verdeJP-b30) !important;
+}
+
+.active, .nav-item:active {
+    background-color: var(--rosadoJP-acento);
+    color: var(--black) !important;
+}
+
+.navbar-toggler {
+    color: var(--white) !important;
+  }
 
 /** Slogan **/
 
