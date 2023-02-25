@@ -30,6 +30,29 @@ p, h1, h2, h3 {
     font-family: var(--mainFont);
 }
 
+/** NavBar **/
+
+.navegation {
+    background-color: var(--verdeJP-100) !important;
+    font-family: var(--mainFont);
+    font-weight: 700;
+    
+}
+
+.nav-item {
+    color: var(--verdeJP-b30) !important;
+    background-color: var(--verdeJP-s15b95);
+    margin-right: 20px;
+    /* padding: 0 10px; */
+}
+
+.navbar-nav .nav-link {
+    padding-left: 20px;
+}
+
+
+/** Slogan **/
+
 .slogan {
     /* height: 100vh; */
     height: calc(100vh - 56px);
@@ -44,8 +67,6 @@ p, h1, h2, h3 {
     height: 100%;
     z-index: -1;
 }
-
-/** Slogan **/
 
 .slogan__content {
     height: 100%;
