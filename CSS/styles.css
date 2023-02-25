@@ -55,6 +55,7 @@ p, h1, h2, h3 {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    text-align: center;
 }
 
 .slogan__content--title {
@@ -94,6 +95,8 @@ p, h1, h2, h3 {
     padding: 0 20px;
     margin: 0;
     font-weight: 700;
+    text-shadow: 2px 0 var(--bgColor), -2px 0 var(--bgColor), 0 2px var(--bgColor), 0 -2px var(--bgColor),
+               1px 1px var(--bgColor), -1px -1px var(--bgColor), 1px -1px var(--bgColor), -1px 1px var(--bgColor);
 }
 
 .slogan__content--text span {
@@ -112,5 +115,25 @@ p, h1, h2, h3 {
     .slogan__content--text {
         font-size: 30px;
         padding: 0 100px;
+    }
+}
+
+.slogan__content--button button{
+    font-family: var(--mainFont);
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--rosadoJP-acento);
+    border: none;
+    width: 90%;
+    padding: 10px 20px;
+    margin: 0 20px;
+    
+    text-align: center;
+    border-radius: 20px;
+}
+
+@media (min-width: 600px) {
+    .slogan__content--button button{
+        width: 200px;
     }
 }
