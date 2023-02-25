@@ -1,0 +1,45 @@
+:root {
+	--verdeJP-100: #009E88;
+	--verdeJP-b30: #004D42;
+	--verdeJP-s30: #6F9E97;
+	--verdeJP-S60: #3F9E90;
+	--verdeJP-s15b95: #CEF2EC;
+	
+	--rosadoJP-acento: #EDB2BA;
+	
+	--azulJP-sem: #46A7EF;
+	--naranjaJP-sem: #DA9344;
+	--rojoJP-sem: #BC3345;
+
+    --bgColor: #1E1E1E;
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+	background-color: var(--bgColor);
+    
+}
+
+p, h1, h2, h3 {
+    color: var(--white);
+}
+
+.slogan {
+    /* height: 100vh; */
+    height: calc(100vh - 56px);
+    position: relative;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slogan__content {
+    position: relative;
+}
