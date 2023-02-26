@@ -230,18 +230,13 @@ p, h1, h2, h3 {
     
 }
 
-
-/** Footer **/
-
-.footer {
-    background-color: var(--verdeJP-100);
-    height: 60px;
-}
-
 /** Carousel **/
 
 .recent__carousel {
     margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -250,8 +245,13 @@ p, h1, h2, h3 {
 }
 
 .carousel {
-    height: 100% !important;
+    height: fit-content;
+    /* height: 20vh; */
     
+}
+
+.carousel--inner {
+    height: 100% !important;
 }
 
 .carousel-item {
@@ -263,10 +263,44 @@ p, h1, h2, h3 {
 .card {
     padding: 10px;
     margin: 0 10px;
-    height: 100%;
+    height: 100% !important;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    /* background-color: rgba(237, 178, 186, 0.6); */
 }
 
+.card:hover {
+    text-decoration: none;
+    background-color: rgba(206, 242, 236, 0.7);
+}
 
+.card:active {
+    background-color: rgba(237, 178, 186, 0.7);
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card-title {
+    font-family: var(--mainFont);
+    color: var(--verdeJP-b30);
+    font-weight: 700;
+    /* background-color: var(--rosadoJP-acento); */
+
+}
+
+.card-text {
+    color: var(--black);
+}
+
+.arrow__button {
+    background-color: var(--rosadoJP-acento);
+    padding: 10px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+}
 
 @media (min-width: 600px) {
     .card {
@@ -275,9 +309,23 @@ p, h1, h2, h3 {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .card {
         padding: 20px;
-        margin: 0 23%;
+        margin: 0 18.5%;
     }
+}
+
+/** Footer **/
+
+.footer {
+    background-color: var(--verdeJP-100);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.footer p {
+    margin: 0;
 }
