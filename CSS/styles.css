@@ -36,7 +36,7 @@ p, h1, h2, h3 {
     background-color: var(--verdeJP-100) !important;
     font-family: var(--mainFont);
     font-weight: 700;
-    
+
 }
 
 .nav-item {
@@ -107,7 +107,7 @@ p, h1, h2, h3 {
     text-transform: uppercase;
     text-shadow: 2px 0 var(--bgColor), -2px 0 var(--bgColor), 0 2px var(--bgColor), 0 -2px var(--bgColor),
                1px 1px var(--bgColor), -1px -1px var(--bgColor), 1px -1px var(--bgColor), -1px 1px var(--bgColor);
-    
+
     padding: 0 20px;
     margin-top: 50px;
 }
@@ -127,7 +127,7 @@ p, h1, h2, h3 {
     .slogan__content--title h1 {
         font-size: 60px;
     }
-    
+
     .slogan__content--title h3 {
         font-size: 45px;
     }
@@ -152,7 +152,7 @@ p, h1, h2, h3 {
         font-size: 25px;
         padding: 0 80px;
     }
-    
+
 }
 
 @media (min-width: 1000px) {
@@ -171,7 +171,7 @@ p, h1, h2, h3 {
     width: 90%;
     padding: 10px 20px;
     margin: 0 20px;
-    
+
     text-align: center;
     border-radius: 20px;
 }
@@ -186,12 +186,13 @@ p, h1, h2, h3 {
 /** Recent **/
 
 .recent {
-    /* height: 100vh; */
-    height: calc(100vh - 60px);
+    height: 100vh;
+    /* height: calc(100vh - 60px); */
     background-image: linear-gradient(to bottom, var(--bgColor), var(--verdeJP-b30));
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .recent__title {
@@ -199,7 +200,7 @@ p, h1, h2, h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     margin-bottom: 20px;
 }
 
@@ -227,7 +228,7 @@ p, h1, h2, h3 {
         width: 200px;
         height: 2px;
     }
-    
+
 }
 
 /** Carousel **/
@@ -237,7 +238,7 @@ p, h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .active {
@@ -247,7 +248,7 @@ p, h1, h2, h3 {
 .carousel {
     height: fit-content;
     /* height: 20vh; */
-    
+
 }
 
 .carousel--inner {
@@ -281,14 +282,13 @@ p, h1, h2, h3 {
 
 .card-img-top {
     border-radius: 10px;
+    /* object-fit: cover; */
 }
 
 .card-title {
     font-family: var(--mainFont);
     color: var(--verdeJP-b30);
     font-weight: 700;
-    /* background-color: var(--rosadoJP-acento); */
-
 }
 
 .card-text {
@@ -312,7 +312,7 @@ p, h1, h2, h3 {
 @media (min-width: 800px) {
     .card {
         padding: 20px;
-        margin: 0 18.5%;
+        margin: 0 21%;
     }
 }
 
@@ -327,5 +327,12 @@ p, h1, h2, h3 {
 }
 
 .footer p {
+    font-size: 12px;
     margin: 0;
+}
+
+@media (min-width: 600px) {
+    .footer p {
+        font-size: 16px;
+    }
 }
